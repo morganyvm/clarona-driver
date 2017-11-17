@@ -52,6 +52,6 @@ $ sudo dd if=/dev/clarona-rdseed of=out bs=8 count=1MB
 
 ## Commercial Support
 
-[antelabs GmbH](http://antelabs.com) provides commercial support for Clarona RDSEED & RDRAND Linux driver. Please send an email to <mailto:clarona@antelabs.com> if you are interested.
+[antelabs GmbH](http://antelabs.com) provides commercial support for Clarona RDSEED & RDRAND Linux driver. Please send an email to <clarona@antelabs.com> if you are interested.
 
 antelabs GmbH also provides Clarona Java Secure Random Provider enabling direct access to the hardware random generator embedded inside the CPU. Like NativePRNG implementations, but rather than accessing to /dev/random and /dev/urandom, this implementation provides pure RDSEED & RDRAND output to be used in Java applications.
