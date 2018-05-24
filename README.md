@@ -12,12 +12,7 @@ Just use make. You need to have kernel headers.
 
 ## Supported Architectures
 
-Driver is tested on Linux Kernel 4.10, Ubuntu 16.04 x86_64 running on an Intel Xeon E5-1245 v5.
-
-uname -a output includes:
-```
-Linux 4.10.0-38-generic #42~16.04.1-Ubuntu SMP x86_64 GNU/Linux
-```
+Driver is tested on Linux Kernel 4.15.0, Ubuntu 18.04 x86_64 running on an Intel Xeon E5-1245 v5.
 
 cat /proc/cpuinfo output includes:
 ```
@@ -25,8 +20,6 @@ vendor_id   : GenuineIntel
 cpu family  : 6
 model       : 94
 model name  : Intel(R) Xeon(R) CPU E3-1245 v5 @ 3.50GHz
-stepping    : 3
-cpuid level : 22
 flags       : many flags including rdrand and rdseed
 ```
 

@@ -10,7 +10,7 @@
 #include <linux/device.h>
 #include <linux/kernel.h>
 #include <linux/fs.h>
-#include <asm/uaccess.h>
+#include <linux/uaccess.h>
 
 #define DEVICE_NAME "clarona"
 #define CLASS_NAME "clarona"
@@ -299,15 +299,15 @@ rd_dev_read (int opId, struct file *filep, char *buffer, size_t len,
       return 0;
     }
 
-  printk (KERN_DEBUG "antelabs-clarona: %s ret=%lx\n", op, randout);
-  printk (KERN_DEBUG "antelabs-clarona: %s flg=0x%x\n", op, flag);
+  // printk (KERN_DEBUG "antelabs-clarona: %s ret=%lx\n", op, randout);
+  // printk (KERN_DEBUG "antelabs-clarona: %s flg=0x%x\n", op, flag);
 
   if (flag == 1)
     {
 
       size_t lencopied;
 
-      printk (KERN_DEBUG "antelabs-clarona: %s return is valid", op);
+      // printk (KERN_DEBUG "antelabs-clarona: %s return is valid", op);
 
       if (len > sizeof (unsigned long))
 	{
@@ -318,9 +318,9 @@ rd_dev_read (int opId, struct file *filep, char *buffer, size_t len,
 	  lencopied = len;
 	}
 
-      printk (KERN_DEBUG
-	      "antelabs-clarona: copying %lu bytes to user space\n",
-	      lencopied);
+      // printk (KERN_DEBUG
+	    //  "antelabs-clarona: copying %lu bytes to user space\n",
+	    //  lencopied);
 
       if (copy_to_user (buffer, ((char *) &randout), lencopied))
 	{
