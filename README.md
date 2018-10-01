@@ -45,4 +45,4 @@ $ sudo dd if=/dev/clarona-rdseed of=out bs=8 count=1MB
 
 ## Commercial Support
 
-[antelabs GmbH](https://www.antelabs.com) provides commercial support for Clarona Character Device Driver and more. Please send an email to <hello@antelabs.com> if you are interested.
+[antelabs GmbH](https://www.antelabs.com) provides commercial support for Clarona Character Device Driver and more.
