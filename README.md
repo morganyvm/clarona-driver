@@ -8,7 +8,7 @@ Detailed explanation of Intel's implementation can be read here: <https://softwa
 
 ## Installation
 
-Just use make. You need to have kernel headers.
+Just use make and then insmod. You need to have kernel headers.
 
 ## Supported Architectures
 
@@ -30,7 +30,7 @@ The character devices /dev/clarona-rdseed and /dev/clarona-rdrand can be read by
 If you want to use them to feed Java Secure Random algorithms, there are two ways:
 
 1. run JVM with -Djava.security.egd=/dev/clarona-rdseed (this will use /dev/clarona-rdseed instead of /dev/random)
-2. implement a custom Secure Random algorithm to use one or both character devices (see Commercial Support)
+2. implement a custom Secure Random algorithm to use one or both character devices
 
 ## Performance
 
@@ -45,4 +45,4 @@ $ sudo dd if=/dev/clarona-rdseed of=out bs=8 count=1MB
 
 ## Commercial Support
 
-[antelabs GmbH](https://www.antelabs.com) provides commercial support for Clarona Character Device Driver and more.
+[antelabs GmbH](https://www.antelabs.com) provides commercial support for Clarona Character Device Driver.
