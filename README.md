@@ -34,7 +34,7 @@ If you want to use them to feed Java Secure Random algorithms, there are two way
 
 ## Performance
 
-20 MBit/sec True Random Bit Stream (RDSEED output) generation throughput can be easily achieved.
+20 MBit/sec True Random Bit Stream (RDSEED output) generation throughput can be easily achieved. Actual number depends on various factors.
 
 ```
 $ sudo dd if=/dev/clarona-rdseed of=out bs=8 count=1MB
@@ -45,6 +45,4 @@ $ sudo dd if=/dev/clarona-rdseed of=out bs=8 count=1MB
 
 ## Commercial Support
 
-[antelabs GmbH](http://antelabs.com) provides commercial support for Clarona RDSEED & RDRAND Linux driver. Please send an email to <clarona@antelabs.com> if you are interested.
-
-antelabs GmbH also provides Clarona Java Secure Random Provider enabling direct access to the hardware random generator embedded inside the CPU. Like NativePRNG implementations, but rather than accessing to /dev/random and /dev/urandom, this implementation provides pure RDSEED & RDRAND output to be used in Java applications.
+[antelabs GmbH](https://www.antelabs.com) provides commercial support for Clarona Character Device Driver and more.
